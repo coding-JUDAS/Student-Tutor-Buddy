@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="anchorPane" prefHeight="400.0" prefWidth="600.0" stylesheets="@../styling.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ViewStudentBookings.StudentBookings">
+   <children>
+      <ImageView fitHeight="71.0" fitWidth="95.0" layoutX="14.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Logo.jpeg" />
+         </image>
+      </ImageView>
+      <Label layoutX="142.0" layoutY="9.0" text="TutorBuddy">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <Label fx:id="nameSname" layoutX="14.0" layoutY="78.0" text="Name Surname" />
+      <Label layoutX="34.0" layoutY="95.0" text="Student" />
+      <Label layoutX="193.0" layoutY="78.0" text="TOGETHER WE CAN" />
+      <Button fx:id="backButton" layoutX="516.0" layoutY="26.0" mnemonicParsing="false" onAction="#onBackButtonPressed" prefHeight="25.0" prefWidth="74.0" text="Back" />
+      <ImageView fitHeight="47.0" fitWidth="200.0" layoutX="390.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@nelson%20mandela%20university%20logo.PNG" />
+         </image>
+      </ImageView>
+      <Separator layoutX="4.0" layoutY="118.0" prefHeight="3.0" prefWidth="601.0" />
+      <Label layoutX="14.0" layoutY="137.0" text="VIEW STUDENT BOOKINGS" />
+      <Label layoutX="14.0" layoutY="174.0" text="Select a booking and choose to Accept or Cancel the booking..." />
+      <TableView fx:id="tblViewBookings" layoutX="15.0" layoutY="198.0" prefHeight="174.0" prefWidth="445.0">
+        <columns>
+          <TableColumn fx:id="columnModuleCode" prefWidth="87.0" text="Module Code" />
+          <TableColumn fx:id="columnModuleName" prefWidth="110.0" text="Module Name" />
+            <TableColumn fx:id="columnTutor" prefWidth="116.0" text="Tutor" />
+            <TableColumn fx:id="columnDate" prefWidth="57.0" text="Date" />
+            <TableColumn fx:id="columnTime" prefWidth="75.0" text="Time" />
+        </columns>
+      </TableView>
+      <Button fx:id="cancelButton" layoutX="465.0" layoutY="231.0" mnemonicParsing="false" onAction="#onCancelButtonPressed" prefHeight="25.0" prefWidth="123.0" text="Cancel Booking" />
+      <Button fx:id="confirmButton" layoutX="463.0" layoutY="273.0" mnemonicParsing="false" onAction="#onConfirmButtonPressed" prefHeight="25.0" prefWidth="123.0" text="Confirm Attendance" />
+   </children>
+</AnchorPane>

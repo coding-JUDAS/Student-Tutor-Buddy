@@ -1,0 +1,8 @@
+s220907730,Leah,Mujeyi,s220907730@mandela.ac.za,3,s220907730
+s2200241406,Ntabuzuko,Sana,s2200241406@mandela.ac.za,3,s2200241406
+s220032882,Ovayo,Matiwane,s220032882@mandela.ac.za,2,s220032882
+s220165815,Bernadette,Machia,s220165815@mandela.ac.za,1,s220165815
+s216057860,Belle,Vans,s216057860@mandela.ac.za,3,s21605786
+s220132857,Onwabe,Sisusa,s220132857@mandela.ac.za,1,s220132857
+s229864383,Ruvimbo,Musiyarira,s229864383@mandela.ac.za,2,s229864383
+s227985476,Tadiwa,Mujeyi,s227985476@mandela.ac.za,1,s227985476

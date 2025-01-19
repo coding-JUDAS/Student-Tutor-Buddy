@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="anchorPane" prefHeight="400.0" prefWidth="600.0" stylesheets="@../styling.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TutorLandingPage.TutorLandingController">
+   <children>
+      <Button fx:id="btnCreateSession" layoutX="489.0" layoutY="122.0" mnemonicParsing="false" onAction="#btnCreateSessionPressed" text="Create Session" />
+      <Button fx:id="btnCancelSession" layoutX="488.0" layoutY="170.0" mnemonicParsing="false" onAction="#btnCancelSessionPressed" text="Cancel Session" />
+      <Button fx:id="btnUpdateFee" layoutX="488.0" layoutY="221.0" mnemonicParsing="false" onAction="#btnUpdateFeePressed" prefHeight="25.0" prefWidth="94.0" text="Update Fee" />
+      <Button fx:id="logout" layoutX="497.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnLogoutPressed" text="Logout" />
+      <ImageView fitHeight="63.0" fitWidth="114.0" layoutX="8.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../Documents/2021/Semester 02/WRRV301 - Project/Solution Construction and Deployment/OLS_Devs_Final/src/StudentLandingPage/Logo.jpeg" />
+         </image></ImageView>
+      <Separator layoutY="99.0" prefHeight="0.0" prefWidth="598.0" />
+      <Label layoutX="102.0" layoutY="11.0" text="TutorBuddy">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="132.0" layoutY="69.0" text="TOGETHER WE CAN">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <ImageView fitHeight="76.0" fitWidth="200.0" layoutX="351.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../StudentLandingPage/nelson%20mandela%20university%20logo.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="264.0" fitWidth="223.0" layoutX="158.0" layoutY="147.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@tutor.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="nameAndSurname" layoutX="27.0" layoutY="63.0" text="Name Surname" />
+      <Label layoutX="41.0" layoutY="81.0" text="Tutor" />
+      <DialogPane headerText="Post-Attendance Reflection" layoutX="76.0" layoutY="121.0" visible="false" />
+   </children>
+</AnchorPane>

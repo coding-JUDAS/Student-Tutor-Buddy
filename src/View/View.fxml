@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.ViewController">
+   <children>
+      <ImageView fitHeight="98.0" fitWidth="112.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../ReviewTutorApplication/user.PNG" />
+         </image>
+      </ImageView>
+      <Label layoutX="17.0" layoutY="107.0" prefHeight="17.0" prefWidth="102.0" text="Administrator" />
+      <Label layoutX="162.0" layoutY="26.0" prefHeight="70.0" prefWidth="261.0" text="TutorBuddy">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnLogOut" layoutX="501.0" layoutY="26.0" mnemonicParsing="false" onAction="#onLogOutClicked" prefHeight="25.0" prefWidth="85.0" text="LOGOUT" />
+      <Button fx:id="btnBack" layoutX="518.0" layoutY="59.0" mnemonicParsing="false" onAction="#onBackClicked" prefHeight="25.0" prefWidth="41.0" text="Back" />
+      <Label layoutX="248.0" layoutY="146.0" prefHeight="43.0" prefWidth="72.0" text="View">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnviewSR" layoutX="160.0" layoutY="200.0" mnemonicParsing="false" onAction="#onViewSessionSummary" prefHeight="25.0" prefWidth="229.0" text="View Session Report" />
+      <Button fx:id="btnVAS" layoutX="160.0" layoutY="232.0" mnemonicParsing="false" onAction="#onViewAttendanceSummary" prefHeight="25.0" prefWidth="229.0" text="View Attendance Summary" />
+      <Button fx:id="btnVBR" layoutX="159.0" layoutY="267.0" mnemonicParsing="false" onAction="#onViewBookingsReport" prefHeight="25.0" prefWidth="229.0" text="View Bookings Report" />
+      <Separator layoutY="119.0" prefHeight="17.0" prefWidth="600.0" />
+      <ImageView fitHeight="33.0" fitWidth="184.0" layoutX="412.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../ReviewTutorApplication/nmu.jpeg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="anchorPane" prefHeight="400.0" prefWidth="600.0" stylesheets="@../styling.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="StudentViewInvoice.StudentViewInvoiceController">
+   <children>
+      <ImageView fitHeight="76.0" fitWidth="102.0" layoutX="30.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Logo.jpeg" />
+         </image>
+      </ImageView>
+      <Label fx:id="nameSname" layoutX="40.0" layoutY="83.0" text="Name Surname" />
+      <Label layoutX="60.0" layoutY="107.0" text="Student" />
+      <Label layoutX="203.0" layoutY="19.0" text="TutorBuddy">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="238.0" layoutY="106.0" text="TOGETHER WE CAN">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="386.0" layoutY="77.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@nelson%20mandela%20university%20logo.PNG" />
+         </image>
+      </ImageView>
+      <Separator layoutX="3.0" layoutY="144.0" prefHeight="0.0" prefWidth="593.0" />
+      <Label layoutX="26.0" layoutY="147.0" text="VIEW INVOICE" />
+      <TableView fx:id="tblView" layoutX="30.0" layoutY="174.0" prefHeight="154.0" prefWidth="525.0">
+        <columns>
+            <TableColumn fx:id="colAmount" prefWidth="166.5999755859375" text="Amount" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnClose" layoutX="523.0" layoutY="19.0" mnemonicParsing="false" onAction="#setOnCloseClicked" text="Close" />
+      <Label fx:id="lblTotal" layoutX="30.0" layoutY="354.0" text="Total Owed: " />
+   </children>
+</AnchorPane>

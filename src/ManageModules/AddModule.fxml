@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="anchorPane" prefHeight="400.0" prefWidth="600.0" stylesheets="@../styling.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ManageModules.AddModuleController">
+   <children>
+      <ImageView fitHeight="93.0" fitWidth="127.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@user.PNG" />
+         </image>
+      </ImageView>
+      <Label layoutX="17.0" layoutY="115.0" prefHeight="17.0" prefWidth="127.0" text="  Administrator" />
+      <Label layoutX="169.0" layoutY="15.0" prefHeight="70.0" prefWidth="257.0" text="TutorBuddy">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <Button id="btnBack" fx:id="btnLogOut" layoutX="497.0" layoutY="12.0" mnemonicParsing="false" onMouseClicked="#onLOGOUTClicked" prefHeight="37.0" prefWidth="87.0" stylesheets="@../styling.css" text="LOGOUT" />
+      <Button id="btnBack" fx:id="btnBack" layoutX="515.0" layoutY="59.0" mnemonicParsing="false" onAction="#onBackBtnPressed" onMouseClicked="#OnBackBtnClicked" prefHeight="25.0" prefWidth="41.0" stylesheets="@../styling.css" text="Back" />
+      <Label layoutX="225.0" layoutY="132.0" prefHeight="17.0" prefWidth="224.0" text="Add Module">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="155.0" layoutY="224.0" prefHeight="17.0" prefWidth="87.0" text="Module Name" />
+      <Label layoutX="155.0" layoutY="282.0" text="Module Code" />
+      <Button id="btnBack" fx:id="btnAdd" layoutX="193.0" layoutY="343.0" mnemonicParsing="false" onMouseClicked="#onAddBtnClicked" prefHeight="25.0" prefWidth="72.0" stylesheets="@../styling.css" text="Add" />
+      <Button id="btnBack" fx:id="btnCancel" layoutX="311.0" layoutY="343.0" mnemonicParsing="false" onMouseClicked="#OnCancelBtnClicked" prefHeight="25.0" prefWidth="62.0" stylesheets="@../styling.css" text="Cancel" />
+      <TextArea fx:id="txtModuleCode" layoutX="263.0" layoutY="278.0" prefHeight="35.0" prefWidth="200.0" />
+      <TextArea fx:id="txtModuleName" layoutX="263.0" layoutY="212.0" prefHeight="38.0" prefWidth="200.0" />
+      <Separator layoutX="7.0" layoutY="127.0" prefHeight="11.0" prefWidth="594.0" />
+      <Label layoutX="265.0" layoutY="77.0" text="Together we can">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="35.0" fitWidth="206.0" layoutX="387.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@nmu.jpeg" />
+         </image></ImageView>
+   </children>
+</AnchorPane>

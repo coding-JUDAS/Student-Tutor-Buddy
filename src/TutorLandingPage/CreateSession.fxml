@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="anchorPane" prefHeight="400.0" prefWidth="600.0" stylesheets="@../../../../../../../Documents/2021/Semester 02/WRRV301 - Project/Solution Construction and Deployment/OLS_Devs_Final/src/styling.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TutorLandingPage.CreateSession">
+   <children>
+      <Separator layoutX="9.0" layoutY="120.0" prefHeight="4.0" prefWidth="585.0" />
+      <ImageView fitHeight="98.0" fitWidth="200.0" layoutX="360.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Login/nelson%20mandela%20university%20logo.PNG" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnCancel" layoutX="513.0" layoutY="338.0" mnemonicParsing="false" onAction="#cancelBtnPressed" stylesheets="@../../../../../../../Documents/2021/Semester 02/WRRV301 - Project/Solution Construction and Deployment/OLS_Devs_Final/src/styling.css" text="CANCEL" />
+      <Button fx:id="btnSave" layoutX="446.0" layoutY="338.0" mnemonicParsing="false" onAction="#btnSavePressed" stylesheets="@../../../../../../../Documents/2021/Semester 02/WRRV301 - Project/Solution Construction and Deployment/OLS_Devs_Final/src/styling.css" text="SAVE" />
+      <GridPane fx:id="sessionDataGrid" layoutX="143.0" layoutY="132.0" prefHeight="254.0" prefWidth="200.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="lblStudentId" text="StudentId" />
+            <TextField fx:id="studentIdTxtField" GridPane.columnIndex="1" />
+            <TextField fx:id="tutorIdTxtField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="moduleCodeTxtField" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField fx:id="sessionTimeTxtField" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField fx:id="feeTxtField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="numStudentsTxtField" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Label text="TutorId" GridPane.rowIndex="2" />
+            <Label text="Module Code" GridPane.rowIndex="3" />
+            <Label text="Session Date" GridPane.rowIndex="4" />
+            <Label text="Session Time" GridPane.rowIndex="5" />
+            <Label fx:id="lblFee" text="Fee" GridPane.rowIndex="1" />
+            <Label text="Number of Students" GridPane.rowIndex="6" />
+            <DatePicker fx:id="sessionDatePicker" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+         </children>
+      </GridPane>
+      <RadioButton fx:id="radioBtnIndividualSession" layoutX="30.0" layoutY="41.0" mnemonicParsing="false" onAction="#radioBtnIndividualSessionSelected" text="Individual Session" />
+      <RadioButton fx:id="radioBtnGroupSession" layoutX="30.0" layoutY="83.0" mnemonicParsing="false" onAction="#radioBtnGroupSessionSelected" text="Group Session" />
+      <Label layoutX="30.0" layoutY="14.0" />
+   </children>
+</AnchorPane>

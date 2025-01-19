@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="anchorPane" prefHeight="400.0" prefWidth="600.0" stylesheets="@../../../../../../../Documents/2021/Semester 02/WRRV301 - Project/Solution Construction and Deployment/OLS_Devs_Final/src/styling.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TutorLandingPage.CancelSessionController">
+   <children>
+      <ImageView fitHeight="63.0" fitWidth="75.0" layoutX="21.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Logo.jpeg" />
+         </image>
+      </ImageView>
+      <Label layoutX="42.0" layoutY="70.0" prefHeight="18.0" prefWidth="46.0" text="Tutor" />
+      <Separator layoutY="108.0" prefHeight="3.0" prefWidth="602.0" />
+      <ImageView fitHeight="38.0" fitWidth="214.0" layoutX="366.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@nelson%20mandela%20university%20logo.PNG" />
+         </image>
+      </ImageView>
+      <Button id="btnBack" fx:id="btnLogOut" layoutX="480.0" layoutY="27.0" mnemonicParsing="false" onAction="#onLogoutClicked" stylesheets="@../../../../../../../Documents/2021/Semester 02/WRRV301 - Project/Solution Construction and Deployment/OLS_Devs_Final/src/styling.css" text="LogOut" />
+      <Label layoutX="147.0" layoutY="13.0" prefHeight="25.0" prefWidth="235.0" text="TutorBuddy">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="178.0" layoutY="64.0" prefHeight="25.0" prefWidth="115.0" text="TOGETHER WE CAN" />
+      <TableView fx:id="tblSession" layoutX="56.0" layoutY="162.0" prefHeight="196.0" prefWidth="441.0">
+        <columns>
+          <TableColumn fx:id="clmDate" prefWidth="139.33334350585938" text="DATE" />
+          <TableColumn fx:id="clmTime" prefWidth="154.66668701171875" text="TIME" />
+            <TableColumn fx:id="clmModule" prefWidth="144.33331298828125" text="MODULE" />
+        </columns>
+      </TableView>
+      <Label id="sessionsLabel" layoutX="42.0" layoutY="123.0" stylesheets="@../../../../../../../Documents/2021/Semester 02/WRRV301 - Project/Solution Construction and Deployment/OLS_Devs_Final/src/styling.css" text="CANCEL SESSION" />
+      <Button id="btnBack" fx:id="btnCancel" layoutX="528.0" layoutY="187.0" mnemonicParsing="false" onAction="#onCancelClicked" stylesheets="@../../../../../../../Documents/2021/Semester 02/WRRV301 - Project/Solution Construction and Deployment/OLS_Devs_Final/src/styling.css" text="Cancel" />
+      <Button id="btnBack" fx:id="btnBack" layoutX="536.0" layoutY="326.0" mnemonicParsing="false" onAction="#onBackClicked" prefHeight="25.0" prefWidth="51.0" stylesheets="@../../../../../../../Documents/2021/Semester 02/WRRV301 - Project/Solution Construction and Deployment/OLS_Devs_Final/src/styling.css" text="Back" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@../../styling.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="StudentLandingPage.Reflection.ReflectionController">
+   <children>
+      <AnchorPane layoutX="175.0" layoutY="78.0" onMouseClicked="#tableViewSelectedItem" prefHeight="400.0" prefWidth="600.0" stylesheets="@../../styling.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Separator layoutX="-1.0" layoutY="121.0" prefHeight="0.0" prefWidth="600.0" />
+            <ImageView fitHeight="62.0" fitWidth="91.0" layoutX="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Login/Logo.jpeg" />
+               </image></ImageView>
+            <Label fx:id="NameSurname" layoutX="21.0" layoutY="64.0" text="NameSurname" />
+            <Label layoutX="40.0" layoutY="93.0" prefHeight="17.0" prefWidth="54.0" text="Student" />
+            <Label layoutX="120.0" layoutY="14.0" text="TUTORBUDY">
+               <font>
+                  <Font size="40.0" />
+               </font></Label>
+            <Label layoutX="176.0" layoutY="91.0" text="TOGETHER WE CAN">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <ImageView fitHeight="44.0" fitWidth="196.0" layoutX="368.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Login/nelson%20mandela%20university%20logo.PNG" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnBack" layoutX="510.0" layoutY="352.0" mnemonicParsing="false" onAction="#btnBackOnAction" text="BACK" />
+            <HBox layoutX="13.0" layoutY="133.0" prefHeight="132.0" prefWidth="568.0">
+               <children>
+                  <TableView fx:id="reflectionTableView" editable="true" onMouseClicked="#tableViewSelectedItem" prefHeight="132.0" prefWidth="342.0">
+                    <columns>
+                      <TableColumn fx:id="sessionIDTableViewColumn" prefWidth="85.0" text="Session ID" />
+                        <TableColumn fx:id="attendedTableViewColumn" prefWidth="85.0" text="Attended" />
+                        <TableColumn fx:id="commentTableViewColumn" prefWidth="85.0" text="Comment" />
+                        <TableColumn fx:id="ratingTableViewColumn" prefWidth="85.0" text="Rating" />
+                    </columns>
+                  </TableView>
+               </children>
+            </HBox>
+            <VBox alignment="TOP_CENTER" layoutX="21.0" layoutY="278.0" prefHeight="100.0" prefWidth="60.0" spacing="30.0">
+               <children>
+                  <Label text="Comment :" />
+                  <Label text="Rating :" />
+               </children>
+            </VBox>
+            <VBox layoutX="90.0" layoutY="274.0" prefHeight="100.0" prefWidth="130.0" spacing="25.0">
+               <children>
+                  <TextField fx:id="txtFieldComment" prefHeight="25.0" prefWidth="141.0" />
+                  <Spinner fx:id="ratingSpinner" prefHeight="25.0" prefWidth="50.0" />
+               </children>
+            </VBox>
+            <Button fx:id="btnUploadComment" layoutX="269.0" layoutY="274.0" mnemonicParsing="false" onAction="#btnUploadCommentOnAction" text="UPLOAD" />
+         </children></AnchorPane>
+   </children>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</AnchorPane>

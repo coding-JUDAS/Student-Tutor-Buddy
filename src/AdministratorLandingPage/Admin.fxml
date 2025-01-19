@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane id="anchorPane" hgap="5.0" prefHeight="344.0" prefWidth="573.0" stylesheets="@../styling.css" vgap="5.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AdministratorLandingPage.Controller">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="134.0" minWidth="10.0" prefWidth="134.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="141.0" minWidth="10.0" prefWidth="133.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="155.0" minWidth="10.0" prefWidth="155.0" />
+  </columnConstraints>
+  <rowConstraints>
+      <RowConstraints maxHeight="93.0" minHeight="10.0" prefHeight="64.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="84.0" minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="84.0" minHeight="10.0" prefHeight="16.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="124.0" minHeight="10.0" prefHeight="124.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="71.0" minHeight="10.0" prefHeight="57.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <ImageView fitHeight="92.0" fitWidth="134.0" onMouseClicked="#LoadStudentsClicked" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="3">
+         <image>
+            <Image url="@LoadStudents.PNG" />
+         </image>
+      </ImageView>
+      <Button id="btnBack" fx:id="btnLoadStudents" mnemonicParsing="false" onMouseClicked="#LoadStudentsClicked" prefHeight="42.0" prefWidth="130.0" stylesheets="@../styling.css" text="Load Students" GridPane.rowIndex="4" />
+      <ImageView fitHeight="96.0" fitWidth="108.0" onMouseClicked="#ManageModulesClicked" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="3">
+         <image>
+            <Image url="@Modules1.PNG" />
+         </image>
+      </ImageView>
+      <Button id="btnBack" fx:id="btnManageModule" mnemonicParsing="false" onMouseClicked="#ManageModulesClicked" prefHeight="40.0" prefWidth="135.0" stylesheets="@../styling.css" text="Manage Modules" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+      <Button id="btnBack" fx:id="btnReviewTutorApps" mnemonicParsing="false" onMouseClicked="#ReviewTutorAppsClicked" prefHeight="42.0" prefWidth="135.0" stylesheets="@../styling.css" text="Review Tutor Applications" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+      <ImageView fitHeight="89.0" fitWidth="107.0" onMouseClicked="#ReviewTutorAppsClicked" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="3">
+         <image>
+            <Image url="@Review.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="77.0" fitWidth="110.0" onMouseClicked="#ViewClicked" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="3">
+         <image>
+            <Image url="@View.PNG" />
+         </image>
+      </ImageView>
+      <Button id="btnBack" fx:id="btnView" mnemonicParsing="false" onMouseClicked="#ViewClicked" prefHeight="41.0" prefWidth="122.0" stylesheets="@../styling.css" text="View" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+      <ImageView fitHeight="68.0" fitWidth="98.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@user.PNG" />
+         </image>
+      </ImageView>
+      <Label prefHeight="24.0" prefWidth="109.0" text="Administartor" GridPane.rowIndex="1" />
+      <Label pickOnBounds="false" prefHeight="45.0" prefWidth="217.0" text="TutorBuddy" GridPane.columnIndex="1" GridPane.columnSpan="2">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="36.0" />
+         </font>
+      </Label>
+      <Button id="btnBack" fx:id="btnLogOut" mnemonicParsing="false" onMouseClicked="#onLOGOUTClicked" prefHeight="36.0" prefWidth="104.0" stylesheets="@../styling.css" text="LOGOUT" GridPane.columnIndex="3">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Separator prefHeight="0.0" prefWidth="217.0" GridPane.columnSpan="4" GridPane.rowIndex="2" />
+      <ImageView fitHeight="41.0" fitWidth="198.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="1" />
+      <ImageView fitHeight="69.0" fitWidth="155.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="1">
+         <image>
+            <Image url="@nmu.jpeg" />
+         </image>
+      </ImageView>
+   </children>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</GridPane>

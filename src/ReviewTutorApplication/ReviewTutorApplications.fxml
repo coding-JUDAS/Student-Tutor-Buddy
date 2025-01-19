@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="anchorPane" prefHeight="400.0" prefWidth="600.0" stylesheets="@../styling.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ReviewTutorApplication.ReviewController">
+   <children>
+      <ImageView fitHeight="83.0" fitWidth="92.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@user.PNG" />
+         </image></ImageView>
+      <Label layoutX="17.0" layoutY="93.0" prefHeight="17.0" prefWidth="86.0" text="Administrator" />
+      <Label layoutX="127.0" layoutY="20.0" prefHeight="70.0" prefWidth="257.0" text="TutorBuddy">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <Button id="btnBack" fx:id="btnLogOut" layoutX="488.0" layoutY="12.0" mnemonicParsing="false" onAction="#onLOGOUTClicked" onMouseClicked="#onLOGOUTClicked" prefHeight="25.0" prefWidth="92.0" stylesheets="@../styling.css" text="LOGOUT" />
+      <Button id="btnBack" fx:id="btnBack" layoutX="508.0" layoutY="49.0" mnemonicParsing="false" onAction="#onBackClicked" prefHeight="25.0" prefWidth="41.0" stylesheets="@../styling.css" text="Back" />
+      <Label layoutX="154.0" layoutY="117.0" prefWidth="263.0" text="Review Tutor Applications">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnApprove" layoutX="499.0" layoutY="239.0" mnemonicParsing="false" onAction="#onApproveClicked" prefHeight="25.0" prefWidth="127.0" text="Approve Application" />
+      <Button id="btnBack" fx:id="btnDone" layoutX="220.0" layoutY="355.0" mnemonicParsing="false" onMouseClicked="#onDoneClicked" prefHeight="25.0" prefWidth="127.0" stylesheets="@../styling.css" text="Done" />
+      <Separator layoutX="-1.0" layoutY="110.0" prefHeight="5.0" prefWidth="600.0" />
+      <ImageView fitHeight="35.0" fitWidth="205.0" layoutX="388.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@nmu.jpeg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tblApplications" layoutX="56.0" layoutY="152.0" prefHeight="200.0" prefWidth="432.0">
+        <columns>
+          <TableColumn fx:id="tbcStNum" prefWidth="141.99999618530273" text="Student Number" />
+          <TableColumn fx:id="tbcMod" prefWidth="144.6667022705078" text="Module" />
+            <TableColumn fx:id="tbcTranscript" minWidth="6.33331298828125" prefWidth="145.0" text="Mark" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnReject" layoutX="499.0" layoutY="287.0" mnemonicParsing="false" onAction="#onRejectClIcked" prefHeight="25.0" prefWidth="121.0" text="Reject Application" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="anchorPane" prefHeight="400.0" prefWidth="600.0" stylesheets="@../styling.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ManageModules.DeleteModuleController">
+   <children>
+      <ImageView fitHeight="93.0" fitWidth="120.0" layoutX="10.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@user.PNG" />
+         </image>
+      </ImageView>
+      <Label layoutX="19.0" layoutY="111.0" prefHeight="17.0" prefWidth="111.0" text="Administrator" />
+      <Label layoutX="173.0" layoutY="24.0" prefHeight="61.0" prefWidth="213.0" text="TutorBuddy">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Button id="btnBack" fx:id="btnLogOut" layoutX="477.0" layoutY="21.0" mnemonicParsing="false" onMouseClicked="#onLOGOUTClicked" prefHeight="25.0" prefWidth="111.0" stylesheets="@../styling.css" text="LOGOUT" />
+      <Button id="btnBack" fx:id="btnBack" layoutX="515.0" layoutY="57.0" mnemonicParsing="false" onAction="#onBackClicked" prefHeight="25.0" prefWidth="41.0" stylesheets="@../styling.css" text="Back" />
+      <Label layoutX="169.0" layoutY="145.0" prefHeight="44.0" prefWidth="201.0" text="Delete Module">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="txtModuleCode" layoutX="315.0" layoutY="189.0" prefHeight="37.0" prefWidth="200.0" />
+      <TextArea fx:id="txtModuleName" layoutX="315.0" layoutY="251.0" prefHeight="38.0" prefWidth="200.0" />
+      <Label layoutX="166.0" layoutY="189.0" prefHeight="37.0" prefWidth="111.0" text="Module Code" />
+      <Label layoutX="166.0" layoutY="255.0" prefHeight="31.0" prefWidth="105.0" text="Module Name" />
+      <Button id="btnBack" fx:id="btnConfirm" layoutX="166.0" layoutY="326.0" mnemonicParsing="false" onMouseClicked="#onConfirmClicked" prefHeight="25.0" prefWidth="85.0" stylesheets="@../styling.css" text="Confirm" />
+      <Button id="btnBack" fx:id="btnCancel" layoutX="415.0" layoutY="320.0" mnemonicParsing="false" onAction="#onCancelClicked" prefHeight="25.0" prefWidth="85.0" stylesheets="@../styling.css" text="Cancel" />
+      <Separator layoutY="122.0" prefHeight="17.0" prefWidth="600.0" />
+      <Label layoutX="200.0" layoutY="86.0" prefHeight="20.0" prefWidth="140.0" text="Together we can">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="38.0" fitWidth="207.0" layoutX="386.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@nmu.jpeg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

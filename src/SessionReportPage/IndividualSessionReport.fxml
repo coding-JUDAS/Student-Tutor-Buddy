@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="400.0" prefWidth="600.0" stylesheets="@../styling.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SessionReportPage.IndividualSessionReport">
+   <children>
+      <ImageView fitHeight="78.0" fitWidth="95.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@user.PNG" />
+         </image>
+      </ImageView>
+      <Label layoutX="25.0" layoutY="69.0" text="Administrator" />
+      <TableView fx:id="tblRatings" layoutX="25.0" layoutY="163.0" prefHeight="200.0" prefWidth="377.0">
+        <columns>
+          <TableColumn fx:id="colComment" prefWidth="300.0" text="Comment" />
+          <TableColumn fx:id="colRating" minWidth="0.0" prefWidth="76.0" text="Rating" />
+        </columns>
+      </TableView>
+      <Separator layoutX="9.0" layoutY="101.0" prefHeight="0.0" prefWidth="590.0" />
+      <Label layoutX="151.0" text="TutorBuddy">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <Label layoutX="222.0" layoutY="69.0" text="TOGETHER WE CAN" />
+      <Button fx:id="btnBack" layoutX="520.0" layoutY="23.0" mnemonicParsing="false" onAction="#setOnBackClicked" text="BACK" />
+      <Label layoutX="25.0" layoutY="114.0" text="Session Report" />
+      <Label fx:id="lblDate" layoutX="137.0" layoutY="114.0" text="Date: " />
+      <Label layoutX="25.0" layoutY="138.0" text="Tutor:" />
+      <Label fx:id="lblTutor" layoutX="136.0" layoutY="138.0" text="Name_Surname" />
+      <Label fx:id="lblSessionType" layoutX="406.0" layoutY="114.0" text="Session Type: " />
+      <Label layoutX="442.0" layoutY="163.0" text="Overall Rating:" />
+      <Label fx:id="lblRating" layoutX="442.0" layoutY="191.0" text="5.0/5">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

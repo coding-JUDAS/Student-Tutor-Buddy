@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TutorLandingPage.Reflections.PostAttendanceReflection">
+    <children>
+        <AnchorPane id="anchorPane" prefHeight="405.0" prefWidth="602.0">
+            <children>
+                <Button layoutX="497.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnLogoutPressed" text="Logout" />
+                <Separator layoutY="99.0" prefHeight="0.0" prefWidth="598.0" />
+                <Label layoutX="102.0" layoutY="11.0" text="TutorBuddy">
+                    <font>
+                        <Font size="40.0" />
+                    </font>
+                </Label>
+                <Label layoutX="132.0" layoutY="69.0" text="TOGETHER WE CAN">
+                    <font>
+                        <Font size="14.0" />
+                    </font></Label>
+                <ImageView fitHeight="76.0" fitWidth="200.0" layoutX="351.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../StudentLandingPage/nelson%20mandela%20university%20logo.PNG" />
+                    </image>
+                </ImageView>
+            <Label layoutX="22.0" layoutY="102.0" text="Post-Attendance Reflection" />
+            <ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="ALWAYS" layoutX="22.0" layoutY="119.0" prefHeight="275.0" prefWidth="574.0" vbarPolicy="ALWAYS">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="77.0" prefWidth="387.0">
+                     <children>
+                        <Label layoutX="24.0" layoutY="14.0" text="1. What is the name of your tutor?" />
+                        <TextField layoutX="56.0" layoutY="44.0" promptText="Enter name here" />
+                        <Label layoutX="24.0" layoutY="83.0" text="2. The tutor was well prepared for the lesson." />
+                        <RadioButton fx:id="opt1" layoutX="44.0" layoutY="100.0" mnemonicParsing="false" onAction="#RadioBtnSelected" onMouseClicked="#RadioBtnSelected" text="Almost always" />
+                        <RadioButton fx:id="opt2" layoutX="44.0" layoutY="126.0" mnemonicParsing="false" onAction="#RadioBtnSelected" text="Frequent" />
+                        <RadioButton fx:id="opt3" layoutX="44.0" layoutY="151.0" mnemonicParsing="false" onAction="#RadioBtnSelected" text="Sometimes" />
+                        <RadioButton fx:id="opt4" layoutX="44.0" layoutY="178.0" mnemonicParsing="false" onAction="#RadioBtnSelected" text="Rarely" />
+                        <Label layoutX="24.0" layoutY="211.0" text="3. The tutor explained the course material clearly." />
+                        <RadioButton layoutX="44.0" layoutY="228.0" mnemonicParsing="false" text="Almost always" />
+                        <RadioButton layoutX="44.0" layoutY="252.0" mnemonicParsing="false" text="Frequent" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </ScrollPane>
+            </children>
+         <stylesheets>
+            <URL value="@../../styling.css" />
+            <URL value="@../../../../../../../Documents/2021/Semester 02/WRRV301 - Project/Solution Construction and Deployment/OLS_Devs_Final/src/styling.css" />
+         </stylesheets></AnchorPane>
+    </children>
+
+</AnchorPane>
